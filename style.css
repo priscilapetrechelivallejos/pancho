@@ -1,0 +1,170 @@
+body {
+  background-color: black;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+}
+/* mucho orgulho*/
+.header {
+  width: 980px;
+  height: 140px;
+  background: url(/assets/header-pancho.png);
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto 15px; /* Espaçamento entre o header e o container */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px; /* Espaçamento entre o header e o container */
+  margin-bottom: 15px; /* Espaçamento entre o container e o footer */
+}
+
+/* Estilos da sidebar */
+/*FOI MUITO DIFICIL ISSO AQUI TÁ*/
+.sidebar {
+  background-color: #ea981d;
+  width: 270px; /* Largura fixa */
+  padding: 10px; /* Adiciona um padding interno */
+  margin-right: 15px; /* Espaçamento de 15px para a direita */
+  height: 470px; /* Altura fixa */
+}
+
+/*MENU SIMPLÃO QUE ME TOMOU HORAS POR NÃO QUERER FICAR ONDE EUUU QUERIA*/
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os itens horizontalmente */
+  justify-content: center; /* Centraliza os itens verticalmente */
+  height: 100%; /* Utiliza toda a altura da sidebar */
+}
+
+.link {
+  font-size: 16px;
+  font-weight: 525;
+  text-align: center;
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.link:not(:first-child) {
+  border-top: 2px solid rgba(255, 255, 255, 0.2); /* Linha entre os links */
+}
+
+.link:after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.5); /* Alterada para preto */
+  bottom: 50%;
+  left: -100%;
+  transition-delay: all 0.5s;
+  transition: all 0.5s;
+}
+
+.link:hover:after,
+.link.hover:after {
+  left: 100%;
+}
+
+.link .text {
+  text-shadow: 0px -40px 0px rgba(255, 255, 255, 1);
+  transition: all 0.75s;
+  transform: translateY(100%) translateZ(0);
+  transition-delay: all 0.25s;
+}
+
+.link:hover .text,
+.link.hover .text {
+  text-shadow: 0px -40px 0px rgba(0, 0, 0, 0);
+  transform: translateY(0%) translateZ(0) scale(1.1);
+  font-weight: 600;
+}
+
+/*Redes*/
+.social-links {
+  margin-top: 20px;
+}
+
+.social-link img {
+  width: 20px; /* Ajuste o tamanho conforme necessário */
+  height: auto; /* Mantém a proporção */
+  transition: filter 0.3s ease; /* Adiciona transição para a mudança de cor */
+}
+
+.social-link:hover img {
+  filter: grayscale(0%) invert(100%); /* Inverte a cor do ícone e remove escala de cinza */
+}
+
+/*content*/
+
+.content {
+  background-color: #f5f5f5;
+  width: 690px;
+  height: 430px;
+  padding: 20px; /* Adiciona espaçamento interno */
+  padding-top: 40px; /* Adiciona um espaçamento superior de 20px */
+  position: relative; /* Permite posicionar o título de forma absoluta */
+}
+h1 {
+  font-family: "Satisfy", cursive; /* Aplica a fonte Satisfy */
+  color: #000; /* Cor laranja */
+  text-align: center; /* Centraliza o texto */
+  position: absolute; /* Posiciona o título de forma absoluta */
+  top: 0; /* Alinha o título no topo do content */
+  left: 50%; /* Alinha o título no centro horizontal do content */
+  transform: translateX(-50%); /* Corrige a posição do título */
+}
+
+/* só Deus sabe como tá a cabeça do palhaço*/
+
+.cardapio {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Espaçamento entre os itens do cardápio */
+}
+
+.item img {
+  width: 100px; /* Largura da imagem */
+  height: auto;
+  margin-right: 10px; /* Espaçamento entre a imagem e as informações */
+}
+
+.item .info {
+  flex: 1;
+}
+.info p {
+  color: #333; /* Cor desejada para a descrição */
+  margin-top: 1px; /* Reduz a margem superior da descrição */
+}
+
+/*odiei essa fonte mas era o que tinha*/
+.item h2 {
+  color: #ffa500; /* Cor laranja, você pode ajustar para a cor desejada */
+  margin-bottom: 1px; /* Espaçamento abaixo do nome do prato */
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+}
+
+/*simplinho d+*/
+
+.footer {
+  width: 980px;
+  height: 70px;
+  background: url(/assets/FOOTER-PANCHO.png);
+  background-size: cover;
+  background-position: center;
+  margin: 15px auto 0;
+}
