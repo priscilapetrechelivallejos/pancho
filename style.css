@@ -8,7 +8,7 @@ body {
 .header {
   width: 980px;
   height: 140px;
-  background: url(/assets/header-pancho.png);
+  background: url(assets/header-pancho.png);
   background-size: cover;
   background-position: center;
   margin: 0 auto 15px; /* Espaçamento entre o header e o container */
@@ -163,7 +163,7 @@ h1 {
 .footer {
   width: 980px;
   height: 70px;
-  background: url(/assets/FOOTER-PANCHO.png);
+  background: url(assets/FOOTER-PANCHO.png);
   background-size: cover;
   background-position: center;
   margin: 15px auto 0;
